@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cheering for Bharath Sir</title>
+    <script>
+        function changeMessage() {
+    const messages = [ "Heartly Congratulations Bharath Sir !!"
+    ];
+
+    const cheerMessage = document.getElementById("cheerMessage");
+    const randomIndex = Math.floor(Math.random() * messages.length);
+
+    cheerMessage.innerText = messages[randomIndex];
+}
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:grey ;">Cheering for Bharath Sir!</h1>
+        <p style="color: grey;" id="cheerMessage">Congratulations Sir	</p>
+        <button onclick="changeMessage()">Send Cheers!</button>
+    </div>
+
+    
+</body>
+</html>
